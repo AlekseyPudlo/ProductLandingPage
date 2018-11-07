@@ -70,6 +70,7 @@ a:hover {
 form#form {
 	display: flex;
 	flex-direction: column;
+	
 }
 
 input#email {
@@ -85,7 +86,7 @@ input#submit {
 	margin: 20px auto;
 	height: auto;
 	width: auto;
-	background-color: #ffab45;
+	background-color: #ffe366;
 	color: black;
 	line-height: 2;
 	font-size: 20px;
@@ -104,7 +105,7 @@ input#submit:hover {
 
 @keyframes overflow {
 	0% {
-		background-color: #ffab45;
+		background-color: #ffe366;
 		color: black;
 	}
 	50% {
@@ -112,10 +113,29 @@ input#submit:hover {
 		color: azure;
 	}
 	100% {
-		background-color: #ffab45;
+		background-color: #ffe366;
 		color: black;
 	}
 }
+/*Email section end*/
+
+/*Features section start*/
+section#features {
+	display: flex;
+	flex-direction: column;
+}
+
+img#left {
+	display: block;
+	float: left;
+	object-position: center;
+}
+
+div#sub-section {
+	float: right;
+	max-width: 800px;
+}
+/*Features section end*/
 
 /*
 @media only screen and (max-width: 300px) {
