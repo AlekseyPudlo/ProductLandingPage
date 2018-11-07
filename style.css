@@ -70,7 +70,7 @@ a:hover {
 form#form {
 	display: flex;
 	flex-direction: column;
-	
+	margin-bottom: 50px;
 }
 
 input#email {
@@ -97,11 +97,12 @@ input#submit {
 	animation-name: overflow;
 	animation-duration: 6s;
 	animation-iteration-count: infinite;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.19);
 }
 
 input#submit:hover {
-		animation-name: none;
-	}
+	animation-name: none;
+}
 
 @keyframes overflow {
 	0% {
@@ -123,12 +124,14 @@ input#submit:hover {
 section#features {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 50px;
 }
 
-img#left {
+#left {
 	display: block;
 	float: left;
-	object-position: center;
+	margin-top: 50px;
+	margin-right: 25px;
 }
 
 div#sub-section {
@@ -136,6 +139,84 @@ div#sub-section {
 	max-width: 800px;
 }
 /*Features section end*/
+
+/*Video section start*/
+section#video-section {
+	margin-bottom: 50px;
+}
+iframe#video {
+	box-shadow: 0 10px 10px 1px rgba(0,0,0,0.19);
+}
+/*Video section end*/
+
+/*Pricing section start*/
+section#pricing-section {
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#tenor, #bass, #valve {
+	margin: 10px;
+	width: 33%;
+	border: thick;
+	box-shadow: 0 2px 10px 1px rgba(0,0,0,0.19);
+}
+
+div.level {
+	width: 100%;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 3;
+	background-color: darkgray;
+}
+
+#tenor > ul, #bass > ul, #valve > ul {
+	list-style-type: none;
+	text-align: left;
+	line-height: 2;
+}
+
+input[type="button"] {
+	margin-bottom: 20px;
+	background-color: #ffe366;
+	width: auto;
+	height: auto;
+	line-height: 2;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: 0;
+	border-radius: 5px;
+}
+
+input[type="button"]:hover {
+	background-color: #ff831d;
+	transition: 1s;
+}
+/*Pricing section end*/
+
+
+/*Footer start*/
+footer {
+	width: 70%;
+	background-color: darkgray;
+	text-align: right;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+ul#footer-list {
+	list-style-type: none;
+}
+
+ul#footer-list li {
+	display: inline;
+	margin: 10px;
+	font-size: 18px;
+}
+/*Footer end*/
 
 /*
 @media only screen and (max-width: 300px) {
