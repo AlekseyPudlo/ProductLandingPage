@@ -66,10 +66,56 @@ a:hover {
 /*Header block end*/
 
 /*Email section start*/
-#email-section {
 
+form#form {
+	display: flex;
+	flex-direction: column;
 }
 
+input#email {
+	margin: auto;
+	height: 2em;
+	width: 20em;
+	border: 1 solid;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+input#submit {
+	margin: 20px auto;
+	height: auto;
+	width: auto;
+	background-color: #ffab45;
+	color: black;
+	line-height: 2.5;
+	font-size: 1rem;
+	font-family: 'Abril Fatface', cursive;
+	text-align: center;
+	border: 0;
+	border-radius: 5px;
+	animation-name: overflow;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+input#submit:hover {
+		animation-name: none;
+	}
+
+@keyframes overflow {
+	0% {
+		background-color: #ffab45;
+		color: black;
+	}
+	50% {
+		background-color: #ff831d;
+		color: azure;
+	}
+	100% {
+		background-color: #ffab45;
+		color: black;
+	}
+}
 
 /*
 @media only screen and (max-width: 300px) {
