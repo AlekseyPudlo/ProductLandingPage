@@ -87,12 +87,12 @@ input#submit {
 	width: auto;
 	background-color: #ffab45;
 	color: black;
-	line-height: 2.5;
-	font-size: 1rem;
+	line-height: 2;
+	font-size: 20px;
 	font-family: 'Abril Fatface', cursive;
 	text-align: center;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 4px;
 	animation-name: overflow;
 	animation-duration: 6s;
 	animation-iteration-count: infinite;
