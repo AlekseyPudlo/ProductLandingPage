@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+body {
+	margin: 100px 0px 0px 0px;
+	background-color: #f2f2f7;
+	font-family: 'Abril Fatface', cursive;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Header block start*/
+header {
+	width: 100%;
+	padding-top: 10px;
+	background-color: #F2F2F7;
+	position: fixed;
+	top: 0;
+	font-size: 20px;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.19);
+}
+
+div.company-logo-img {
+	width: 70%;
+	float: left;	
+}
+
+img#header-img {
+	width: 100%;
+	max-width: 300px;
+	margin: 10px auto;
+}
+
+nav#nav-bar {
+	width: 30%;
+	float: right;
+	margin: auto;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+}
+
+nav ul li {
+	display: inline;
+	width: 33%;
+}
+
+a:link {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: cornflowerblue;
+}
+/*Header block end*/
+
+/*Email section start*/
+
+form#form {
+	display: flex;
+	flex-direction: column;
+}
+
+input#email {
+	margin: auto;
+	height: 2em;
+	width: 20em;
+	border: 1 solid;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+input#submit {
+	margin: 20px auto;
+	height: auto;
+	width: auto;
+	background-color: #ffab45;
+	color: black;
+	line-height: 2.5;
+	font-size: 1rem;
+	font-family: 'Abril Fatface', cursive;
+	text-align: center;
+	border: 0;
+	border-radius: 5px;
+	animation-name: overflow;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+input#submit:hover {
+		animation-name: none;
+	}
+
+@keyframes overflow {
+	0% {
+		background-color: #ffab45;
+		color: black;
+	}
+	50% {
+		background-color: #ff831d;
+		color: azure;
+	}
+	100% {
+		background-color: #ffab45;
+		color: black;
+	}
+}
+
+/*
+@media only screen and (max-width: 300px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+*/
+}
