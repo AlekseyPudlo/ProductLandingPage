@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 body {
-	margin: 100px 0px 0px 0px;
+	margin: 6em 0 0 0;
 	background-color: #f2f2f7;
 	font-family: 'Abril Fatface', cursive;
 	display: flex;
@@ -9,7 +9,7 @@ body {
 	align-items: center;
 }
 
-/*Header block start*/
+/*Header block =================================*/
 header {
 	width: 100%;
 	padding-top: 10px;
@@ -21,20 +21,17 @@ header {
 }
 
 div.company-logo-img {
-	width: 70%;
 	float: left;	
 }
 
 img#header-img {
-	width: 100%;
-	max-width: 300px;
-	margin: 10px auto;
+	max-width: 15em;
+	min-width: 10em;
+	margin: 0.5em auto;
 }
 
 nav#nav-bar {
-	width: 30%;
 	float: right;
-	margin: auto;
 }
 
 nav ul {
@@ -45,9 +42,10 @@ nav ul {
 	justify-content: stretch;
 }
 
-nav ul li {
+nav > ul > li {
 	display: inline;
-	width: 33%;
+	width: 7em;
+	padding: 0.2em;
 }
 
 a:link {
@@ -63,9 +61,8 @@ a:visited {
 a:hover {
 	color: cornflowerblue;
 }
-/*Header block end*/
 
-/*Email section start*/
+/*Email section ===============================*/
 
 form#form {
 	display: flex;
@@ -118,9 +115,8 @@ input#submit:hover {
 		color: black;
 	}
 }
-/*Email section end*/
 
-/*Features section start*/
+/*Features section ================================*/
 section#features {
 	display: flex;
 	flex-direction: column;
@@ -138,18 +134,16 @@ div#sub-section {
 	float: right;
 	max-width: 800px;
 }
-/*Features section end*/
 
-/*Video section start*/
+/*Video section =====================================*/
 section#video-section {
 	margin-bottom: 50px;
 }
 iframe#video {
 	box-shadow: 0 10px 10px 1px rgba(0,0,0,0.19);
 }
-/*Video section end*/
 
-/*Pricing section start*/
+/*Pricing section ====================================*/
 section#pricing-section {
 	display: flex;
 	flex-direction: row;
@@ -198,7 +192,7 @@ input[type="button"]:hover {
 /*Pricing section end*/
 
 
-/*Footer start*/
+/*Footer start ============================*/
 footer {
 	width: 70%;
 	background-color: darkgray;
@@ -211,19 +205,88 @@ ul#footer-list {
 	list-style-type: none;
 }
 
-ul#footer-list li {
+ul#footer-list > li {
 	display: inline;
 	margin: 10px;
 	font-size: 18px;
 }
-/*Footer end*/
 
-/*
-@media only screen and (max-width: 300px) {
+/********** Desktop - 920px breakpoint ***************************/
+@media screen and (max-width: 60em) {
+	
 	body {
+		margin: 8em 0 0 0;
+	}
+	
+/*	HEADER ===================================*/
+	div.company-logo-img {
+		text-align: center;
+		float: none;	
+	}
+	
+	nav#nav-bar {
+		float: none;
+		
+	}
+	
+	nav > ul {
+		margin-left: auto;
+		margin-right: auto;
+		width: 21em;
+	}
+	
+/*	Feature section ===========================*/
+	#sub-section {
+		width: 20em;
+		margin-right: 2em;
+	}
+	
+/*	PRICING section ===========================*/
+	section#pricing-section {
+		flex-direction: column;
+	}
+	
+	#tenor, #bass, #valve {
+		margin-left: auto;
+		margin-right: auto;
+		width: 20em;
+	}
+}
+
+/*iPhone SUPPORT***************************************************/
+
+@media screen and (max-width: 22.500em) {
+	
+	body {
+		margin: 15em 0 0 0;
+	}
+	
+/*	HEADER ====================================*/
+	nav > ul {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		align-items: center;
+		width: 7em;
 	}
-*/
+	
+
+	
+/*	EMAIL section =============================*/
+	h2 {
+		font-size: 1em;
+	}
+	
+/*	Features Section ==========================*/
+	#left {
+		display: none;
+	}
+	
+	#sub-section {
+		width: 80%;
+	}
+	
+	/*	PRICING section ===========================*/
+	#tenor, #bass, #valve {
+		width: 14em;
+	}
 }
